@@ -1,0 +1,19 @@
+{
+  "name": "me-mr-review",
+  "owner": {
+    "name": "OGRomva",
+    "url": "https://github.com/OGRomva"
+  },
+  "description": "Скилл mr-review для Claude Code",
+  "plugins": [
+    {
+      "name": "mr-review",
+      "description": "Ревью GitLab MR против постановки из GanttFlow с публикацией замечаний через glab",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/mr-review"
+      ]
+    }
+  ]
+}

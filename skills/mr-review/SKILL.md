@@ -8,7 +8,7 @@ argument-hint: "[MR-ссылки или project!iid ...] [доп. контекс
 
 Аргументы: `$ARGUMENTS`
 
-Скрипты: `~/.claude/skills/mr-review/scripts/`. Крупные данные лежат в файлах каталога прогона, в контекст читай только нужные куски.
+Скрипты: `${CLAUDE_SKILL_DIR}/scripts/`. Крупные данные лежат в файлах каталога прогона, в контекст читай только нужные куски.
 
 ## 0. Жёсткие правила
 - Рабочую копию пользователя не трогать: никаких `checkout`/`switch`/`stash`/`reset`/правок. Код ветки MR читать через `git -C <repo> show <head_sha>:<path>`, `git -C <repo> grep -n <pat> <head_sha>`, `git -C <repo> diff <start_sha> <head_sha> -- <path>`.

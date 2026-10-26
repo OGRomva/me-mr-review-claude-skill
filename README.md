@@ -6,11 +6,19 @@
 
 ## Установка
 
-```bash
-git clone git@github.com:OGRomva/me-mr-review-claude-skill.git ~/.claude/skills/mr-review
+В Claude Code:
+
+```
+/plugin marketplace add OGRomva/me-mr-review-claude-skill
+/plugin install mr-review@me-mr-review
 ```
 
-Обновление: `git -C ~/.claude/skills/mr-review pull`.
+Обновление: `/plugin marketplace update me-mr-review`.
+
+## Разработка
+
+Правки — в клоне репозитория, скилл лежит в `skills/mr-review/`. После `git push` на всех устройствах:
+`/plugin marketplace update me-mr-review`.
 
 ## Зависимости
 
